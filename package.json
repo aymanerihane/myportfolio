@@ -10,10 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@splinetool/react-spline": "^4.0.0",
+    "@splinetool/runtime": "^1.9.79",
     "@tailwindcss/vite": "^4.0.14",
     "@tsparticles/all": "^3.8.1",
     "@tsparticles/react": "^3.0.0",
     "gsap": "^3.12.7",
+    "myportfolio": "file:",
     "particles.js": "^2.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
