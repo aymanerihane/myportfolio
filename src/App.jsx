@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import FirstSection from "./components/firstSection";
+import ProjectCards from "./components/ProjectCards";
+import myImage from './assets/myImage.png';
 
 export default function App() {
   const [currentSection, setCurrentSection] = useState(0);
@@ -138,6 +140,7 @@ export default function App() {
 
   return (
     <div className="w-screen h-screen overflow-hidden">
+      
       <div
         className="w-full h-full transition-transform duration-700 ease-in-out will-change-transform"
         style={{ transform: `translateY(-${currentSection * 100}vh)` }}
@@ -146,8 +149,50 @@ export default function App() {
           <FirstSection />
         </section>
        
-        <section className="w-screen h-screen bg-red-500 flex-shrink-0 flex justify-center items-center text-white">
-          <h2 className="text-4xl font-bold">Section 2</h2>
+        <section className="w-screen  container flex-wrap gap-5 bg-red-500 flex-shrink-0 flex justify-around items-center text-white">
+          
+          <ProjectCards imgPath={myImage}
+              isBlog={false}
+              title="Chatify"
+              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://chatify-49.web.app/"
+              />
+          <ProjectCards imgPath={myImage}
+              isBlog={false}
+              title="Chatify"
+              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://chatify-49.web.app/"
+              />
+          <ProjectCards imgPath={myImage}
+              isBlog={false}
+              title="Chatify"
+              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://chatify-49.web.app/"
+              />
+          <ProjectCards imgPath={myImage}
+              isBlog={false}
+              title="Chatify"
+              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://chatify-49.web.app/"
+              />
+          <ProjectCards imgPath={myImage}
+              isBlog={false}
+              title="Chatify"
+              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://chatify-49.web.app/"
+              />
+          <ProjectCards imgPath={myImage}
+              isBlog={false}
+              title="Chatify"
+              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://chatify-49.web.app/"
+              />
         </section>
        
         <section className="w-screen h-screen bg-green-500 flex-shrink-0 flex justify-center items-center text-white">
@@ -160,11 +205,11 @@ export default function App() {
       </div>
       
       {/* Section indicators */}
-      <div className="fixed right-4 top-1/2 transform -translate-y-1/2 z-50">
+      {/* <div className="fixed right-4 top-1/2 transform -translate-y-1/2 z-50">
         {Array.from({ length: totalSections }).map((_, index) => (
           <div
             key={index}
-            className={`w-3 h-3 my-2 rounded-full cursor-pointer transition-colors ${
+            className={`w-1 h-3 my-2 rounded-full cursor-pointer transition-colors ${
               currentSection === index ? "bg-white" : "bg-gray-400 bg-opacity-50 hover:bg-opacity-80"
             }`}
             onClick={() => {
@@ -181,7 +226,7 @@ export default function App() {
             }}
           />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }
