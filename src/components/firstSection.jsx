@@ -1,5 +1,5 @@
 import ParticleComponent from './particles';
-import Image from '../assets/image.png';
+import Desktop from '../assets/desktop.svg';
 import Spline from '@splinetool/react-spline';
 
 const FirstSection = () => {
@@ -17,13 +17,14 @@ const FirstSection = () => {
               <h2 className='text-[#f3111c] z-10'>Software developer</h2>
           </div>
           <div className="side-two grow flex items-center justify-center px-6 relative">
-              <div className="relative blur-3xl w-[400px] h-[400px] bg-gradient-to-r from-[#003366] to-[#00264d] rounded-full ">
+              <div className="relative blur-3xl w-[500px] h-[500px] bg-gradient-to-r from-[#003366] to-[#00264d] rounded-full ">
               </div>
                   <img 
-                    src={Image} 
+                    src={Desktop} 
                     alt="profile" 
-                    className="max-w-[700px] max-h-[700px] w-[500px] h-full absolute bottom-0 flex justify-center object-cover rounded-full" 
+                    className="max-w-[700px] max-h-[700px] w-[500px] h-full absolute bottom-0 flex justify-center object-cover " 
                   />
+                  
           </div>
       </div>
     </div>

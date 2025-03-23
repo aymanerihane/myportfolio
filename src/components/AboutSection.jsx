@@ -1,5 +1,5 @@
 import React from 'react'
-import myImage from '../assets/myImage.png';
+import myImage from '../assets/desktop2.svg';
 import Tilt from 'react-parallax-tilt';
 export default function AboutSection() {
     return (
@@ -12,7 +12,7 @@ export default function AboutSection() {
                         <span className="flex justify-center opacity-50">Rihane Aymane</span></p>
                 </div>
                 <Tilt>
-                    <div className="w-[300px] h-[300px] bg-blue-950 rounded-full relative">
+                    <div className="w-[300px] h-[300px] rounded-full relative mt-50">
                         <img src={myImage} alt="myImage" className="h-[430px] w-[430px] object-cover  absolute bottom-0 rounded-full" />
                     </div>
                 </Tilt>
