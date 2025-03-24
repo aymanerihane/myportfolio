@@ -1,26 +1,40 @@
-import { HashRouter  } from "react-router-dom";
+import React, { useState, useEffect, Suspense } from "react";
+import { HashRouter } from "react-router-dom";
+import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas, ParticlesComponent, Preloader } from "./components";
 
-import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas, ParticlesComponent } from "./components";
 const App = () => {
+  const [load, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <HashRouter >
-      <div className='relative z-0 bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-        <ParticlesComponent />
-          <Navbar />
-          <Hero />
-        </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <div className='relative z-0'>
-          <Contact />
-          <StarsCanvas />
-        </div>
+    <HashRouter>
+      <Preloader load={load} />
+      <div className="App" id={load ? "no-scroll" : "scroll"}>
+            <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+              <ParticlesComponent />
+              <Navbar />
+              <Hero />
+            </div>
+            
+            <About />
+            <Experience />
+            <Tech />
+            <Works />
+            
+            <div className='relative z-0'>
+              <Contact />
+              <StarsCanvas />
+            </div>
       </div>
-    </HashRouter >
+    </HashRouter>
   );
-}
+};
 
 export default App;

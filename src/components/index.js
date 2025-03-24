@@ -7,8 +7,11 @@ import Experience from './Experience';
 import Works from './Works';
 import Contact from './Contact';
 import ParticlesComponent from './particles';
+import CanvasLoader from './Loader';
+import Preloader from './preLoader';
 
 export {
+  Preloader,
   Hero,
   Navbar,
   About,
@@ -19,5 +22,6 @@ export {
   EarthCanvas, 
   ComputersCanvas, 
   StarsCanvas,
-  ParticlesComponent
+  ParticlesComponent,
+  CanvasLoader
 }
