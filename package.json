@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@react-three/drei": "^10.0.4",
     "@react-three/fiber": "^9.1.0",
     "@splinetool/react-spline": "^4.0.0",
@@ -17,14 +18,18 @@
     "@tailwindcss/vite": "^4.0.14",
     "@tsparticles/all": "^3.8.1",
     "@tsparticles/react": "^3.0.0",
-    "gsap": "^3.12.7",
+    "framer-motion": "^12.5.0",
     "myportfolio": "file:",
     "particles.js": "^2.0.0",
+    "prop-types": "^15.8.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
+    "react-intersection-observer": "^9.16.0",
     "react-parallax-tilt": "^1.7.287",
+    "react-router-dom": "^7.4.0",
     "react-tsparticles": "^2.12.2",
+    "react-vertical-timeline-component": "^3.5.3",
     "three": "^0.174.0",
     "tsparticles": "^3.8.1"
   },
@@ -39,7 +44,7 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
     "postcss": "^8.5.3",
-    "tailwindcss": "^4.0.14",
+    "tailwindcss": "^3.4.17",
     "vite": "^6.2.0"
   }
 }
