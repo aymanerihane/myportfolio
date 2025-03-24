@@ -18,8 +18,11 @@ jobs:
         uses: actions/setup-node@v3
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
-        # uses: bahmutov/npm-install@v1
+        # run: npm install --legacy-peer-deps
+        # If you want to use the alternative npm install action
+        uses: bahmutov/npm-install@v1
+        with:
+          legacy-peer-deps: true
 
       - name: Build project
         run: npm run build
