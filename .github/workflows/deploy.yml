@@ -22,7 +22,7 @@ jobs:
         # If you want to use the alternative npm install action
         uses: bahmutov/npm-install@v1
         with:
-          legacy-peer-deps: true
+          force: true
 
       - name: Build project
         run: npm run build
