@@ -38,11 +38,11 @@ jobs:
       - name: Download artifact (not needed - we'll use direct build)
         run: echo "Skipping artifact download"
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          # Add these to force clean deployment
+          enable_jekyll: false  # Critical for SPAs
+          cname: aymanerihane.github.io
           keep_files: false
-          force_orphan: true
