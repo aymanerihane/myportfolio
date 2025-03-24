@@ -18,7 +18,7 @@ const Earth = () => {
     <primitive
       ref={earthRef}
       object={earth.scene}
-      scale={1.9}
+      scale={2.5}
       position-y={0}
       rotation-y={0}
     />

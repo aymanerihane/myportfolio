@@ -6,7 +6,7 @@ import Tech from './Tech';
 import Experience from './Experience';
 import Works from './Works';
 import Contact from './Contact';
-// import ParticlesComponent from './particles';
+import ParticlesComponent from './particles';
 
 export {
   Hero,
@@ -19,5 +19,5 @@ export {
   EarthCanvas, 
   ComputersCanvas, 
   StarsCanvas,
-  // ParticlesComponent
+  ParticlesComponent
 }

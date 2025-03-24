@@ -39,7 +39,7 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <div className="flex justify-between items-center gap-10 flex-row">
+      <div className="flex justify-between items-center gap-10 flex-col md:flex-row">
       <div>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
@@ -60,7 +60,7 @@ const About = () => {
         </Tilt>
       </motion.div>
       </div>
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-20 justify-center flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

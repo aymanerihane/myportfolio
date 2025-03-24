@@ -49,13 +49,9 @@ const Computers = ({ isMobile }) => {
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.7 : 1.5}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        position={isMobile ? [0, -3, 0] : [1, -3.25, -4]}
         rotation={[rotation.x, rotation.y, -0.1]}
       />
-      {/* Animating the laptop screen with ease-in-out */}
-      {computer.nodes?.Screen && (
-        <primitive object={computer.nodes.Screen} rotation={[screenAngle, 0, 0]} />
-      )}
     </mesh>
   );
 };
@@ -78,18 +74,21 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    <Canvas
-      frameloop="demand"
-      shadows
-      dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <Computers isMobile={isMobile} />
-      </Suspense>
-      <Preload all />
-    </Canvas>
+    <div className="w-full h-screen flex justify-end">
+      <Canvas
+        frameloop="demand"
+        shadows
+        dpr={[1, 2]}
+        camera={{ position: [20, 3, 5], fov: 25 }}
+        gl={{ preserveDrawingBuffer: true }}
+        className="w-full h-full"
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <Computers isMobile={isMobile} />
+        </Suspense>
+        <Preload all />
+      </Canvas>
+    </div>
   );
 };
 

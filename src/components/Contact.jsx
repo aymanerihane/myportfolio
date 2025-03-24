@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
+import { slideIn,textVariant } from "../utils/motion";
 
 const Contact = () => {
   const formRef = useRef();
@@ -34,12 +34,12 @@ const Contact = () => {
     emailjs
       .send(
         "service_t0ggo7u",
-        "template_10hi7xt",
+        "template_1gmlqfr",
         {
           from_name: form.name,
           to_name: "Aymane Rihane",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "rihaneaymanee@gmail.com",
           message: form.message,
         },
         "PBMBCceJ3NH9jt6ZI"
@@ -65,16 +65,21 @@ const Contact = () => {
   };
 
   return (
+    <div>
+      <motion.div variants={textVariant()}>
+        <p className={`${styles.sectionSubText}`}>Get in touch</p>
+        <h2 className={`${styles.sectionHeadText}`}>Contact.</h2>
+      </motion.div>
+    
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
+      
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
-
+        
         <form
           ref={formRef}
           onSubmit={handleSubmit}
@@ -110,7 +115,7 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder='What you want to say?'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium h-[80px]'
             />
           </label>
 
@@ -129,6 +134,7 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+    </div>
     </div>
   );
 };
