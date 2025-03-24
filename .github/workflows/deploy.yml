@@ -18,9 +18,8 @@ jobs:
         uses: actions/setup-node@v3
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
-        with:
-          args: npm install --legacy-peer-deps
+        run: npm ci --legacy-peer-deps
+        # uses: bahmutov/npm-install@v1
 
       - name: Build project
         run: npm run build
