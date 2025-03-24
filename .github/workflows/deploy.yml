@@ -14,15 +14,24 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v3
+        with:
+          node-version: '16' # Specify the Node.js version that matches your project needs
+
+      - name: Cache npm dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-modules-
+
+      - name: Clear npm cache
+        run: npm cache clean --force
 
       - name: Install dependencies
-        # run: npm install --legacy-peer-deps
-        # If you want to use the alternative npm install action
-        uses: bahmutov/npm-install@v1
-        with:
-          force: true
+        run: npm install --legacy-peer-deps
 
       - name: Build project
         run: npm run build
