@@ -21,7 +21,7 @@ export default function FindMe() {
             </li>
             <li className="icon-content">
               <a
-                href="www.linkedin.com/in/aymane-rihane"
+                href="https://linkedin.com/in/aymane-rihane"
                 aria-label="Linkedin"
                 data-social="Linkedin"
               >
