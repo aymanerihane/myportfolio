@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn,textVariant } from "../utils/motion";
+import {FindMe} from '../components'
 
 const Contact = () => {
   const formRef = useRef();
@@ -79,7 +80,9 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl w-full'
       >
-        
+        <div className="mt-5 justify-center flex">
+        <h2 className={styles.heroSubText}>Contact Me Through the Form</h2>
+        </div>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
@@ -126,6 +129,11 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+        <div className="mt-5 justify-center flex">
+        <h2 className={styles.heroSubText}>Alternatively, You Can</h2>
+        </div>
+
+        <FindMe />
       </motion.div>
 
       <motion.div

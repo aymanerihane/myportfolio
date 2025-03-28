@@ -67,9 +67,10 @@ const ProjectCard = ({
 };
 const Works = () => {
   return (
-    <div className="w-full px-4  max-w-7xl">
+    <div className="w-full px-4  max-w-7xl" id="projects">
       {/* Title Section - Now with proper animation triggering */}
       <motion.div 
+        
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
@@ -99,6 +100,7 @@ const Works = () => {
 
       {/* Projects Grid - With proper stagger */}
       <motion.div
+        
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}

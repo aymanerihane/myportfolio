@@ -9,6 +9,7 @@ import Contact from './Contact';
 import ParticlesComponent from './particles';
 import CanvasLoader from './Loader';
 import Preloader from './preLoader';
+import FindMe from './FindMe';
 
 export {
   Preloader,
@@ -23,5 +24,6 @@ export {
   ComputersCanvas, 
   StarsCanvas,
   ParticlesComponent,
-  CanvasLoader
+  CanvasLoader,
+  FindMe
 }

@@ -96,7 +96,11 @@ import {
     },
     {
       id: "work",
-      title: "Work",
+      title: "Education",
+    },
+    {
+      id: "projects",
+      title: "Projects",
     },
     {
       id: "contact",
