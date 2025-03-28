@@ -16,7 +16,7 @@ const App = () => {
   return (
     <HashRouter>
       <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
+      <div className="App bg-[#070312]" id={load ? "no-scroll" : "scroll"}>
             <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
               <ParticlesComponent />
               <Navbar />

@@ -13,6 +13,19 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import chu from "./company/chu.png";
 
+
+import LOGOMASTER from "./LOGOMASTER.jpg";
+import fstlogo from "./fstlogo.jpg";
+
+import MyStudyMate from "./MyStudyMate.png";
+import ParkinsonsDisease from "./ParkinsonsDisease.png";
+import PNP from "./PNP.png";
+import fuzzy from "./fuzzy.png";
+import briscola from "./briscola.jpg";
+import ml from "./ml.jpg";
+import svd from "./svd.png";
+import dl from "./dl.jpg";
+
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -32,5 +45,16 @@ export {
   carrent,
   jobit,
   tripguide,
-  chu
+  chu,
+  LOGOMASTER,
+  fstlogo,
+  MyStudyMate,
+  ParkinsonsDisease,
+  PNP,
+  fuzzy,
+  briscola,
+  ml,
+  svd,
+  dl,
+
 };

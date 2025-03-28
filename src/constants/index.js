@@ -3,33 +3,92 @@ import {
     creator,
     mobile,
     web,
-    meta,
-    shopify,
-    tesla,
-    carrent,
-    jobit,
     tripguide,
-    chu
+    chu,
+    LOGOMASTER,
+    fstlogo,
+    MyStudyMate,
+    ParkinsonsDisease,
+    PNP,
+    fuzzy,
+    briscola,
+    ml,
+    svd,
+    dl,
   } from "../assets";
   import {
+    DiRasberryPi,
     DiJavascript1,
     DiReact,
-    DiNodejs,
     DiMongodb,
     DiPython,
     DiGit,
     DiJava,
+    DiPhp,
+    DiMysql,
+    DiHtml5,
+    DiCss3,
+    DiDart,
+    DiDjango,
+
   } from "react-icons/di";
   import {
-    SiRedis,
-    SiFirebase,
-    SiNextdotjs,
-    SiSolidity,
+    SiArduino,
     SiPostgresql,
+    SiCplusplus ,
+    SiTensorflow,
+    SiScikitlearn,
+    SiSqlite,
+    SiKeras,
+    SiOpencv,
+    SiPandas,
+    SiNumpy,
+    // SiMatplotlib,
+    // SiSeaborn,
+    SiStreamlit,
+    SiAngular,
+    SiSpringboot,
+    SiLaravel,
+    SiDocker,
+    SiFlask,
+    SiFastapi,
   } from "react-icons/si";
-  import { TbBrandGolang } from "react-icons/tb";
 
-  
+  const technologies = [
+    { name: "Python", icon: DiPython },
+    { name: "C++", icon: SiCplusplus },
+    { name: "PHP", icon: DiPhp },
+    { name: "Java", icon: DiJava },
+    { name: "SQL", icon: SiPostgresql },
+    { name: "React", icon: DiReact },
+    { name: "Django", icon: DiDjango },
+    { name: "Dart", icon: DiDart },
+    { name: "T-SQL", icon: SiPostgresql },
+    { name: "SQLite", icon: SiSqlite },
+    { name: "MySQL", icon: DiMysql },
+    { name: "MongoDB", icon: DiMongodb },
+    { name: "TensorFlow", icon: SiTensorflow },
+    { name: "Scikit-learn", icon: SiScikitlearn },
+    { name: "Keras", icon: SiKeras },
+    { name: "OpenCV", icon: SiOpencv },
+    { name: "Pandas", icon: SiPandas },
+    { name: "NumPy", icon: SiNumpy },
+    // { name: "Matplotlib", icon: SiMatplotlib },
+    // { name: "Seaborn", icon: SiSeaborn },
+    { name: "HTML", icon: DiHtml5 },
+    { name: "Streamlit", icon: SiStreamlit },
+    { name: "CSS", icon: DiCss3 },
+    { name: "JavaScript", icon: DiJavascript1 },
+    { name: "Angular", icon: SiAngular },
+    { name: "Spring Boot", icon: SiSpringboot },
+    { name: "Laravel", icon: SiLaravel },
+    { name: "Git", icon: DiGit },
+    { name: "Docker", icon: SiDocker },
+    { name: "Flask", icon: SiFlask },
+    { name: "FastAPI", icon: SiFastapi },
+    { name: "Arduino", icon: SiArduino },
+    { name: "RasberryPi", icon: DiRasberryPi },
+  ];
   export const navLinks = [
     {
       id: "about",
@@ -64,134 +123,43 @@ import {
     },
   ];
   
-  const technologies = [
-    {
-      name: "JavaScript",
-      icon: DiJavascript1,
-    },
-    {
-      name: "TypeScript",
-      icon: DiJavascript1,
-    },
-    {
-      name: "HTML",
-      icon: DiJavascript1,
-    },
-    {
-      name: "CSS",
-      icon: DiJavascript1,
-    },
-    {
-      name: "React",
-      icon: DiReact,
-    },
-    {
-      name: "Redux",
-      icon: DiReact,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: DiJavascript1,
-    },
-    {
-      name: "Node.js",
-      icon: DiNodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: DiMongodb,
-    },
-    {
-      name: "Git",
-      icon: DiGit,
-    },
-    {
-      name: "Figma",
-      icon: DiJavascript1,
-    },
-    {
-      name: "Docker",
-      icon: DiJavascript1,
-    },
-    {
-      name: "Three.js",
-      icon: DiJavascript1,
-    },
-    {
-      name: "Python",
-      icon: DiPython,
-    },
-    {
-      name: "Java",
-      icon: DiJava,
-    },
-    {
-      name: "Redis",
-      icon: SiRedis,
-    },
-    {
-      name: "Firebase",
-      icon: SiFirebase,
-    },
-    {
-      name: "Next.js",
-      icon: SiNextdotjs,
-    },
-    {
-      name: "Solidity",
-      icon: SiSolidity,
-    },
-    {
-      name: "PostgreSQL",
-      icon: SiPostgresql,
-    },
-    {
-      name: "Golang",
-      icon: TbBrandGolang,
-    },
-  ];
-  
   const experiences = [
     {
-      title: "Full Stack Developer",
-      company_name: "CHU",
-      icon: chu,
+      title: "Master in Artificial Intelligence and Data Science",
+      institution: "Faculté Des Sciences et Techniques Tanger",
       iconBg: "#E6DEDD",
-      date: "January 2025 - Present",
+      icon: LOGOMASTER,
+      date: "2024 - 2025 (En cours)",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Studying advanced AI techniques, including machine learning, deep learning, and data analytics.",
+        "Working on real-world AI applications and research projects.",
+        "Developing expertise in big data processing and cloud computing.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      title: "Licence in Application Development Engineering",
+      institution: "Faculté Des Sciences et Techniques Tanger",
+      iconBg: "#E6DEDD",
+      date: "2022 - 2023",
+      icon: fstlogo,
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Focused on software engineering, full-stack development, and system architecture.",
+        "Worked on multiple projects using modern programming languages and frameworks.",
+        "Gained experience in database management and cybersecurity.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "DEUST in Mathematics, Computer Science, Physics, and Chemistry (MIPC)",
+      institution: "Faculté Des Sciences et Techniques Tanger",
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "2019 - 2022",
+      icon: fstlogo,
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Built a strong foundation in mathematics, programming, and scientific computing.",
+        "Developed problem-solving skills and logical reasoning in computational sciences.",
+        "Worked on programming assignments using Python, Java, and C++.",
       ],
     },
-    
   ];
   
   const projects = [
@@ -213,7 +181,7 @@ import {
           color: "text-pink-500",
         },
       ],
-      image: carrent,
+      image: fuzzy,
       source_code_link: "https://github.com/aymanerihane/Fuzzy_CBR_Approch_of_Value_Engineering",
     },
     {
@@ -238,7 +206,7 @@ import {
           color: "text-yellow-500", 
         },
       ],
-      image: jobit,
+      image: ParkinsonsDisease,
       source_code_link: "https://github.com/aymanerihane/Parkinson-s-disease-ML",
     },
     {
@@ -259,7 +227,7 @@ import {
           color: "text-pink-500",
         },
       ],
-      image: tripguide,
+      image: briscola,
       source_code_link: "https://github.com/aymanerihane/Card_Game_Briscola",
     },
     {
@@ -280,7 +248,7 @@ import {
           color: "text-pink-500",
         },
       ],
-      image: tripguide,
+      image: PNP,
       source_code_link: "https://github.com/",
     },
     {
@@ -315,7 +283,7 @@ import {
           color: "text-green-500",
         },
       ],
-      image: tripguide,
+      image: MyStudyMate,
       source_code_link: "https://github.com/aymanerihane/web-app-for-students-and-educators",
     },
     {
@@ -332,7 +300,7 @@ import {
           color: "text-green-500",
         },
       ],
-      image: tripguide,
+      image: svd,
       source_code_link: "https://github.com/aymanerihane/Image-Compression-using-SVD",
     },
     {
@@ -371,7 +339,7 @@ import {
         },
 
       ],
-      image: tripguide,
+      image: ml,
       source_code_link: "https://github.com/aymanerihane/Machine-Learning-From-Scratch",
     },
     {
@@ -392,7 +360,7 @@ import {
           color: "text-pink-500",
         },
       ],
-      image: tripguide,
+      image: dl,
       source_code_link: "https://github.com/aymanerihane/Deep_learning_projects",
     },
   ];

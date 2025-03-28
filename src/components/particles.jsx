@@ -24,12 +24,14 @@ const ParticlesComponent = (props) => {
   const options = useMemo(
     () => ({
       background: {
+        
         image: "url('/src/assets/herobg.png')",
         position: "50% 50%",
         repeat: "no-repeat",
         size: "cover",
+        
       },
-      fpsLimit: 120,
+      fpsLimit: 170,
       interactivity: {
         events: {
           onClick: {
