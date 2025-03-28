@@ -7,14 +7,6 @@ import web from "./web.png";
 import github from "./github.png";
 
 
-
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-import chu from "./company/chu.png";
-
-
 import LOGOMASTER from "./LOGOMASTER.jpg";
 import fstlogo from "./fstlogo.jpg";
 
@@ -40,14 +32,9 @@ export {
   mobile,
   web,
   github,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   carrent,
   jobit,
   tripguide,
-  chu,
   LOGOMASTER,
   fstlogo,
   MyStudyMate,

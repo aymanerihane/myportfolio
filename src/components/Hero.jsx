@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+// import { ComputersCanvas } from "./canvas";
 import Typewriter from "typewriter-effect"; // Import the typewriter-effect library
 
 const Hero = () => {

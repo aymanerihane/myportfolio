@@ -4,7 +4,6 @@ import {
     mobile,
     web,
     tripguide,
-    chu,
     LOGOMASTER,
     fstlogo,
     MyStudyMate,
