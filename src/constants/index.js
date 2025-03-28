@@ -170,7 +170,7 @@ import {
     {
       name: "Fuzzy CBR Approch of Value Engineering ",
       description:
-        "Fuzzy Clustered Case-Based Reasoning System: Development of a machine learning framework that enhances traditional Case-Based Reasoning (CBR) using fuzzy clustering. The system partitions a case base into overlapping fuzzy clusters to improve knowledge retrieval, reduce computational costs, and enhance decision-making accuracy.",
+        "The approach assists experts during the creativity phase of Value Engineering (VE) by leveraging past experiences to avoid repeating solutions within a specific domain. It utilizes fuzzy case-based reasoning (CBR) combined with fuzzy clustering to efficiently retrieve relevant cases, reducing time complexity. The analogical nature of CBR, along with fuzzy theory, enables more accurate and systematic access to information during VE workshops. The method's performance has been tested using Traffic Accident dataset.",
       tags: [
         {
           name: "Fuzzy Clustering",
@@ -307,29 +307,29 @@ import {
       image: svd,
       source_code_link: "https://github.com/aymanerihane/Image-Compression-using-SVD",
     },
+    // {
+    //   name: "Interactive-Machine-Learning-Toolkit",
+    //   description:
+    //     "An interactive machine learning toolkit built with CustomTkinter, featuring a user-friendly GUI for data processing, visualization, and model building. The application includes functionalities like customizable widgets, dynamic target selection, data upload options, and result exporting with visually appealing designs. ",
+    //   tags: [
+    //     {
+    //       name: "Python",
+    //       color: "text-blue-500",
+    //     },
+    //     {
+    //       name: "CustomTkinter",
+    //       color: "text-green-500",
+    //     },
+    //     {
+    //       name: "Machine Learning",
+    //       color: "text-pink-500",
+    //     },
+    //   ],
+    //   image: tripguide,
+    //   source_code_link: "Machine-Learning-From-Scratch ",
+    // },
     {
-      name: "Interactive-Machine-Learning-Toolkit",
-      description:
-        "An interactive machine learning toolkit built with CustomTkinter, featuring a user-friendly GUI for data processing, visualization, and model building. The application includes functionalities like customizable widgets, dynamic target selection, data upload options, and result exporting with visually appealing designs. ",
-      tags: [
-        {
-          name: "Python",
-          color: "text-blue-500",
-        },
-        {
-          name: "CustomTkinter",
-          color: "text-green-500",
-        },
-        {
-          name: "Machine Learning",
-          color: "text-pink-500",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "Machine-Learning-From-Scratch ",
-    },
-    {
-      name: "Machine-Learning-From-Scratch ",
+      name: "Machine Learning From Scratch ",
       description:
         "An interactive machine learning toolkit built with CustomTkinter, featuring a user-friendly GUI for data processing, visualization, and model building. The application includes functionalities like customizable widgets, dynamic target selection, data upload options, and result exporting with visually appealing designs. ",
       tags: [
@@ -347,7 +347,7 @@ import {
       source_code_link: "https://github.com/aymanerihane/Machine-Learning-From-Scratch",
     },
     {
-      name: "Deep_learning_projects",
+      name: "Deep learning projects",
       description:
         "A collection of deep learning projects built with TensorFlow and Keras, focused on tasks like classification and prediction. Each project includes data preprocessing, model training, evaluation, and visualizations. Designed for learning, experimentation, and showcasing practical skills in deep learning. ",
       tags: [
