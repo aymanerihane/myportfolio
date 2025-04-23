@@ -9,7 +9,7 @@ const TechCard = ({ index, name, icon }) => {
   const IconComponent = icon;
   return (
     <motion.div
-      variants={fadeIn("up", "spring", index * 0.05, 0.5)}
+      variants={fadeIn("up", "spring", index * 0.01, 0.5)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, margin: "0px 0px -100px 0px" }}
