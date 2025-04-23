@@ -242,7 +242,7 @@ import {
         },
       ],
       image: PNP,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/aymanerihane/Professional-Networking-Platform",
     },
     {
       name: "UniEvents",
@@ -260,7 +260,7 @@ import {
 
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/aymanerihane/UniEvents",
     },
     {
       name: "MyStudyMate",
