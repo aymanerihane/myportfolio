@@ -164,7 +164,8 @@ import {
   const projects = [
     {
       name: "Real-Time Face Expression Recognition",
-      view : "https://real-time-face-expression-recognition.streamlit.app",
+      // view : "https://real-time-face-expression-recognition.streamlit.app",
+      view : "NaN",
       description:
         "This facial expression recognition system leverages deep learning to detect and classify emotions from static images, video files, or real-time webcam input. It features pre-trained models such as VGG16, VGG19, and EfficientNet B7, offering a trade-off between speed and accuracy. Built with TensorFlow, OpenCV, and Streamlit, the system can recognize common expressions like happy, sad, angry, surprised, and neutral.",
       tags: [
