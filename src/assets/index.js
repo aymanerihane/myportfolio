@@ -5,7 +5,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
-
+import eye from "./eye.png";
 
 import LOGOMASTER from "./LOGOMASTER.jpg";
 import fstlogo from "./fstlogo.jpg";
@@ -18,6 +18,7 @@ import briscola from "./briscola.jpg";
 import ml from "./ml.jpg";
 import svd from "./svd.png";
 import dl from "./dl.jpg";
+import fer from "./fer.jpg"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -44,6 +45,8 @@ export {
   briscola,
   ml,
   svd,
+  eye,
   dl,
+  fer,
 
 };

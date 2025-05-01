@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github,eye } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant, staggerContainer } from "../utils/motion";
@@ -13,6 +13,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  view,
 }) => {
   return (
     <motion.div
@@ -43,6 +44,20 @@ const ProjectCard = ({
                 className='w-1/2 h-1/2 object-contain'
               />
             </button>
+            
+          {(view != "NaN") && (
+            <button
+              onClick={() => window.open(view, "_blank")}
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer shadow-lg hover:scale-110 transition-transform ml-2'
+              aria-label={`View ${name} live demo`}
+            >
+              <img
+                src={eye}
+                alt='Live demo'
+                className='w-1/2 h-1/2 object-contain'
+              />
+            </button>
+          )}
           </div>
         </div>
 

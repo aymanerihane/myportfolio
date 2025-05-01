@@ -14,6 +14,7 @@ import {
     ml,
     svd,
     dl,
+    fer,
   } from "../assets";
   import {
     DiJavascript1,
@@ -45,8 +46,11 @@ import {
     SiApachehadoop ,
     SiApachespark ,
     SiTalend ,
-    SiMediapipe 
+    SiMediapipe,
+    SiApachekafka,
+    SiGitlab 
   } from "react-icons/si";
+  import { FaEye } from "react-icons/fa";
 
   const technologies = [
     { name: "Python", icon: DiPython },
@@ -59,6 +63,7 @@ import {
     { name: "Mediapipe", icon: SiMediapipe },
     { name: "Pandas", icon: SiPandas },
     { name: "NumPy", icon: SiNumpy },
+    { name: "Apache kafka", icon: SiApachekafka },
     { name: "Apache Spark", icon: SiApachespark },
     { name: "Apache Hadoop", icon: SiApachehadoop },
     { name: "Talend", icon: SiTalend },
@@ -71,6 +76,7 @@ import {
     { name: "JavaScript", icon: DiJavascript1 },
     { name: "Spring Boot", icon: SiSpringboot },
     { name: "Git", icon: DiGit },
+    { name: "Gitlab ", icon: SiGitlab  },
     { name: "Docker", icon: SiDocker },
     { name: "T-SQL", icon: SiPostgresql },
     { name: "SQLite", icon: SiSqlite },
@@ -157,7 +163,34 @@ import {
   
   const projects = [
     {
+      name: "Real-Time Face Expression Recognition",
+      view : "https://real-time-face-expression-recognition.streamlit.app",
+      description:
+        "This facial expression recognition system leverages deep learning to detect and classify emotions from static images, video files, or real-time webcam input. It features pre-trained models such as VGG16, VGG19, and EfficientNet B7, offering a trade-off between speed and accuracy. Built with TensorFlow, OpenCV, and Streamlit, the system can recognize common expressions like happy, sad, angry, surprised, and neutral.",
+      tags: [
+        {
+          name: "Deep Learning",
+          color: "text-blue-500",
+        },
+        {
+          name: "Facial Expression Recognition",
+          color: "text-green-500",
+        },
+        {
+          name: "Real-Time",
+          color: "text-red-500",
+        },
+        {
+          name: "FER",
+          color: "text-pink-500",
+        },
+      ],
+      image: fer,
+      source_code_link: "https://github.com/aymanerihane/Real-Time-Face-Expression-Recognition",
+    },
+    {
       name: "Fuzzy CBR Approch of Value Engineering ",
+      view : "NaN",
       description:
         "The approach assists experts during the creativity phase of Value Engineering (VE) by leveraging past experiences to avoid repeating solutions within a specific domain. It utilizes fuzzy case-based reasoning (CBR) combined with fuzzy clustering to efficiently retrieve relevant cases, reducing time complexity. The analogical nature of CBR, along with fuzzy theory, enables more accurate and systematic access to information during VE workshops. The method's performance has been tested using Traffic Accident dataset.",
       tags: [
@@ -179,6 +212,7 @@ import {
     },
     {
       name: "Parkinson’s Disease Prediction with Machine Learning From scratch",
+      view : "NaN",
       description:
         "This project uses vocal features and an Ensemble Feature Selection Algorithm (EFSA) to enhance Parkinson’s disease classification. Optimized models (Logistic Regression, Random Forest, LightGBM) are combined in a majority-vote ensemble, improving accuracy and robustness for early diagnosis, particularly in telemedicine.",
       tags: [
@@ -204,6 +238,7 @@ import {
     },
     {
       name: "Briscola Moroccan card game",
+      view : "NaN",
       description:
         "Design and development of a Moroccan card game in C++ using the Qt Framework. The game includes a GUI, an bot player. The project involved implementing the game logic, designing the GUI, and developing an bot player with 3 different deficulty.",
       tags: [
@@ -225,6 +260,7 @@ import {
     },
     {
       name: "PNP : Professional Networking Platform",
+      view : "NaN",
       description:
         "A professional networking platform for students, teachers, and businesses. Built with Django/Python for backend and HTML5/CSS for frontend. Facilitates profile creation, class management, project showcasing, and business connections. ",
       tags: [
@@ -246,6 +282,7 @@ import {
     },
     {
       name: "UniEvents",
+      view : "NaN",
       description:
         "UniEvents is a Flutter application for tracking university events. It utilizes SQLite to store and manage data locally. Follow, schedule, and participate in university events, all from your mobile device. ",
       tags: [
@@ -264,6 +301,7 @@ import {
     },
     {
       name: "MyStudyMate",
+      view : "NaN",
       description:
         "Dynamic web app for students and educators, employing PHP, MySQL, and Laravel. Key features include a robust communication hub, easy service access, timetable management, and event tracking. Importantly, we've opted for a customized front-end, avoiding frameworks like Bootstrap. ",
       tags: [
@@ -281,6 +319,7 @@ import {
     },
     {
       name: "Image Compression using SVD",
+      view : "NaN",
       description:
         "implementation of image compression using Singular Value Decomposition (SVD). The goal is to reduce the image size while retaining significant visual details by reconstructing it with a reduced number of singular values. ",
       tags: [
@@ -319,6 +358,7 @@ import {
     // },
     {
       name: "Machine Learning From Scratch ",
+      view : "NaN",
       description:
         "An interactive machine learning toolkit built with CustomTkinter, featuring a user-friendly GUI for data processing, visualization, and model building. The application includes functionalities like customizable widgets, dynamic target selection, data upload options, and result exporting with visually appealing designs. ",
       tags: [
@@ -337,6 +377,7 @@ import {
     },
     {
       name: "Deep learning projects",
+      view : "NaN",
       description:
         "A collection of deep learning projects built with TensorFlow and Keras, focused on tasks like classification and prediction. Each project includes data preprocessing, model training, evaluation, and visualizations. Designed for learning, experimentation, and showcasing practical skills in deep learning. ",
       tags: [
@@ -356,6 +397,7 @@ import {
       image: dl,
       source_code_link: "https://github.com/aymanerihane/Deep_learning_projects",
     },
+    
   ];
   
   export { services, technologies, experiences, projects };
