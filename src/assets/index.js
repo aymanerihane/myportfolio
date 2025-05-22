@@ -24,9 +24,12 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import amazon_sentiment from "./amazon_sentiment.png";
+
 
 export {
   pre,
+  amazon_sentiment,
   logo,
   backend,
   creator,
