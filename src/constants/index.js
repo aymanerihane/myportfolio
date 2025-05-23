@@ -196,7 +196,7 @@ const projects = [
     name: "Real-Time Amazon Sentiment Analysis Pipeline",
     view: "NaN",
     description:
-      "Developed a scalable real-time data pipeline that scrapes Amazon product reviews and performs sentiment analysis using Apache Spark MLlib. The system leverages Kafka for message streaming, MongoDB for data storage, and provides live sentiment insights through a React dashboard with WebSocket connections. Built with containerized microservices architecture using Docker Compose, the pipeline processes thousands of reviews per minute and delivers both real-time analytics and historical data export capabilities.",
+      "Developed a scalable real-time data pipeline that scrapes Amazon Music New Releases album reviews and performs sentiment analysis using Apache Spark MLlib. The system leverages Kafka for message streaming, MongoDB for data storage, and provides live sentiment insights through a React dashboard with WebSocket connections. Built with containerized microservices architecture using Docker Compose, the pipeline processes album reviews in real-time and delivers both live analytics and historical data export capabilities.",
     tags: [
       {
         name: "Apache Spark",
