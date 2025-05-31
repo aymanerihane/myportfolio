@@ -25,9 +25,11 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 import amazon_sentiment from "./amazon_sentiment.png";
+import ats_cv_eng from "./ats_cv_eng.pdf";
 
 
 export {
+  ats_cv_eng,
   pre,
   amazon_sentiment,
   logo,
