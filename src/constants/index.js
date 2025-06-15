@@ -110,7 +110,7 @@ const services = [
     icon: creator,
   },
   {
-    title: "Data Analyst",
+    title: "Data Scientist",
     icon: mobile,
   },
   {

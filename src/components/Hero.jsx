@@ -22,7 +22,7 @@ const Hero = () => {
           <span className="text-lg">I am an expert in</span>
             <Typewriter
               options={{
-                strings: ['Software Developer', 'Data Analyst', 'AI Engineer'],
+                strings: ['Software Developer', 'Data Scientist', 'AI Engineer'],
                 autoStart: true,
                 loop: true,
                 delay: 75,
