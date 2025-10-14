@@ -10,6 +10,7 @@ import {
   ParkinsonsDisease,
   PNP,
   fuzzy,
+  CSS,
   briscola,
   ml,
   svd,
@@ -221,6 +222,28 @@ const projects = [
     ],
     image: amazon_sentiment, // You'll need to add this image
     source_code_link: "https://github.com/aymanerihane/amazon-sentiment-analysis",
+  },
+  {
+    name: "Fuzzy CBR Approch of Value Engineering ",
+    view: "NaN",
+    description:
+      "This work presents an adaptation of the Charged System Search (CSS) algorithm with Genetic Algorithm to solve the well-known Travelling Salesman Problem (TSP). CSS, inspired by electrostatics and Newtonian mechanics, is a population-based meta- heuristic where each solution is considered as a charged particle. To handle the combi- natorial nature of TSP, we integrate CSS principles with Genetic Algorithm operators such as ordered crossover and mutation.",
+    tags: [
+      {
+        name: "Charged System Search (CSS)",
+        color: "text-blue-500",
+      },
+      {
+        name: "CBR",
+        color: "text-green-500",
+      },
+      {
+        name: "Genetic Algorithms",
+        color: "text-pink-500",
+      },
+    ],
+    image: CSS,
+    source_code_link: "https://github.com/aymanerihane/TSP-ChargedSystemSearch-GA",
   },
   {
     name: "Fuzzy CBR Approch of Value Engineering ",
