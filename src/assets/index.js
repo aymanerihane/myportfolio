@@ -14,6 +14,7 @@ import MyStudyMate from "./MyStudyMate.png";
 import ParkinsonsDisease from "./ParkinsonsDisease.png";
 import PNP from "./PNP.png";
 import fuzzy from "./fuzzy.png";
+import CSS from "./CSS.png"
 import briscola from "./briscola.jpg";
 import ml from "./ml.jpg";
 import svd from "./svd.png";
@@ -26,6 +27,7 @@ import tripguide from "./tripguide.png";
 
 import amazon_sentiment from "./amazon_sentiment.png";
 import ats_cv_eng from "./ats_cv_eng.pdf";
+
 
 
 export {
@@ -53,5 +55,5 @@ export {
   eye,
   dl,
   fer,
-
+  CSS,
 };
