@@ -130,7 +130,7 @@ const experiences = [
     institution: "Faculté Des Sciences et Techniques Tanger",
     iconBg: "#E6DEDD",
     icon: LOGOMASTER,
-    date: "2024 - 2025 (En cours)",
+    date: "2024 - 2026 (En cours)",
     points: [
       "Studying advanced AI techniques, including machine learning, deep learning, and data analytics.",
       "Working on real-world AI applications and research projects.",
@@ -265,6 +265,7 @@ const projects = [
       },
     ],
     image: fuzzy,
+    view : "https://www.linkedin.com/feed/update/urn:li:activity:7307081529623478272/?originTrackingId=oNCHM%2BVCQfuP%2BIe7t1ePpQ%3D%3D",
     source_code_link: "https://github.com/aymanerihane/Fuzzy_CBR_Approch_of_Value_Engineering",
   },
   {
