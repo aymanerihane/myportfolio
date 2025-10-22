@@ -19,7 +19,7 @@ const Hero = () => {
             Hi, I'm <span className='text-[#7869DF]'>AYMANE RIHANE</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-          <span className="text-lg">I am an expert in</span>
+            <span className="text-lg">I am an expert in</span>
             <Typewriter
               options={{
                 strings: ['Software Developer', 'Data Scientist', 'AI Engineer'],
@@ -29,15 +29,15 @@ const Hero = () => {
               }}
             />
           </p>
-          
+
           {/* CV Buttons */}
-          <div className="mt-8 flex flex-col space-y-4 w-1/5">
-          {/* View CV Button */}
-            <a 
-              href={ats_cv_eng} 
+          <div className="mt-8 flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 w-full sm:w-1/2 lg:w-1/5">
+            {/* View CV Button */}
+            <a
+              href={ats_cv_eng}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-transparent border-2 border-[#7869DF] rounded-md text-white font-bold hover:bg-[#7869DF]/20 transition-colors duration-300 shadow-lg"
+              className="inline-flex items-center justify-center px-6 py-3 bg-transparent border-2 border-[#7869DF] rounded-md text-white font-bold hover:bg-[#7869DF]/20 transition-colors duration-300 shadow-lg w-full"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -45,12 +45,13 @@ const Hero = () => {
               </svg>
               View CV
             </a>
+
             {/* Download CV Button */}
-            <a 
-              href={ats_cv_eng} 
+            <a
+              href={ats_cv_eng}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-[#7869DF] rounded-md text-white font-bold hover:bg-[#5a4fc9] transition-colors duration-300 shadow-lg"
+              className="inline-flex items-center justify-center px-6 py-3 bg-[#7869DF] rounded-md text-white font-bold hover:bg-[#5a4fc9] transition-colors duration-300 shadow-lg w-full"
               download="Aymane_Rihane_CV.pdf"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -59,6 +60,7 @@ const Hero = () => {
               Download CV
             </a>
           </div>
+
         </div>
       </div>
 
