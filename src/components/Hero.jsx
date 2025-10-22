@@ -31,7 +31,7 @@ const Hero = () => {
           </p>
 
           {/* CV Buttons */}
-          <div className="mt-8 flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 w-auto sm:w-1/2 lg:w-1/5">
+          <div className="mt-8 flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 w-auto sm:w-1/2 lg:w-1/5 ml-[-15px] sm:ml-0">
             {/* View CV Button */}
             <a
               href={ats_cv_eng}
@@ -68,7 +68,7 @@ const Hero = () => {
         {/* <ComputersCanvas /> */}
       </div>
 
-      <div className='absolute xs:bottom-10 bottom-32 justify-center items-center w-1/2'>
+      <div className='absolute xs:bottom-10 bottom-32 justify-center items-center w-[54%]'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-[#ffffff] flex justify-center items-start p-2'>
             <motion.div
