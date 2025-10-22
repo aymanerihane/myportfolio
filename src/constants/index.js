@@ -162,6 +162,44 @@ const experiences = [
     ],
   },
 ];
+const educations = [
+  {
+    title: "Master in Artificial Intelligence and Data Science",
+    institution: "Faculté Des Sciences et Techniques Tanger",
+    iconBg: "#E6DEDD",
+    icon: LOGOMASTER,
+    date: "2024 - 2026 (En cours)",
+    points: [
+      "Studying advanced AI techniques, including machine learning, deep learning, and data analytics.",
+      "Working on real-world AI applications and research projects.",
+      "Developing expertise in big data processing and cloud computing.",
+    ],
+  },
+  {
+    title: "Licence in Application Development Engineering",
+    institution: "Faculté Des Sciences et Techniques Tanger",
+    iconBg: "#E6DEDD",
+    date: "2022 - 2023",
+    icon: fstlogo,
+    points: [
+      "Focused on software engineering, full-stack development, and system architecture.",
+      "Worked on multiple projects using modern programming languages and frameworks.",
+      "Gained experience in database management and cybersecurity.",
+    ],
+  },
+  {
+    title: "DEUST in Mathematics, Computer Science, Physics, and Chemistry (MIPC)",
+    institution: "Faculté Des Sciences et Techniques Tanger",
+    iconBg: "#E6DEDD",
+    date: "2019 - 2022",
+    icon: fstlogo,
+    points: [
+      "Built a strong foundation in mathematics, programming, and scientific computing.",
+      "Developed problem-solving skills and logical reasoning in computational sciences.",
+      "Worked on programming assignments using Python, Java, and C++.",
+    ],
+  },
+];
 
 const projects = [
 
@@ -458,4 +496,4 @@ const projects = [
 
 ];
 
-export { services, technologies, experiences, projects };
+export { services, technologies, experiences, projects, educations };

@@ -31,7 +31,7 @@ const Hero = () => {
           </p>
 
           {/* CV Buttons */}
-          <div className="mt-8 flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 w-full sm:w-1/2 lg:w-1/5">
+          <div className="mt-8 flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 w-full sm:w-1/2 lg:w-1/5" style="width: auto;">
             {/* View CV Button */}
             <a
               href={ats_cv_eng}
