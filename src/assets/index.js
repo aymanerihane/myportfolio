@@ -26,7 +26,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 import amazon_sentiment from "./amazon_sentiment.png";
-import ats_cv_eng from "./ats_cv_eng-4.pdf";
+import ats_cv_eng from "./ats_eng.pdf";
 
 
 
