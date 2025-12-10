@@ -286,7 +286,7 @@ const projects = [
       },
     ],
     image: amazon_sentiment, // You'll need to add this image
-    source_code_link: "https://github.com/aymanerihane/amazon-sentiment-analysis",
+    source_code_link: "https://github.com/aymanerihane/Real-Time-Amazon-Sentiment-Analysis-Pipeline",
   },
   {
     name: "Charged System Search Adapted Using GA for TSP ",
