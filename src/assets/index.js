@@ -27,11 +27,13 @@ import tripguide from "./tripguide.png";
 
 import amazon_sentiment from "./amazon_sentiment.png";
 import ats_cv_eng from "./ats_eng.pdf";
+import cloud from "./cloud.png"
 
 
 
 export {
   ats_cv_eng,
+  cloud,
   pre,
   amazon_sentiment,
   logo,

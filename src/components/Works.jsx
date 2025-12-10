@@ -33,6 +33,7 @@ const ProjectCard = ({
           />
 
           <div className='absolute inset-0 flex justify-end m-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+            {(source_code_link != "NaN") && (
             <button
               onClick={() => window.open(source_code_link, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer shadow-lg hover:scale-110 transition-transform'
@@ -44,6 +45,7 @@ const ProjectCard = ({
                 className='w-1/2 h-1/2 object-contain'
               />
             </button>
+            )}
             
           {(view != "NaN") && (
             <button
