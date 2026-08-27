@@ -18,6 +18,9 @@ import {
   dl,
   fer,
   amazon_sentiment,
+  nttLogo,
+  digiup,
+  smartLogo
 } from "../assets";
 import {
   DiJavascript1,
@@ -129,8 +132,8 @@ const experiences = [
   {
     title: "AI Engineer Intern – RAG & Enterprise Knowledge Systems",
     company_name: "NTT DATA",
-    iconBg: "#E6DEDD",
-    icon: LOGOMASTER,
+    iconBg: "#FDFEFE",
+    icon: nttLogo,
     date: "Feb 2026 - Jul 2026",
     points: [
       "Developed a RAG-based Enterprise Knowledge Assistant for Microsoft Teams using SharePoint.",
@@ -142,9 +145,9 @@ const experiences = [
   {
     title: "Application Internship - Al-Enhanced Healthcare Platform",
     company_name: "DIGIUP",
-    iconBg: "#E6DEDD",
+    iconBg: "#FDFEFE",
     date: "Jul 2025 - Aug 2025",
-    icon: fstlogo,
+    icon: digiup,
     points: [
       "Smart healthcare management platform that digitizes hospital workflows and centralizes patient records.",
       "Enables seamless patient-doctor-staff interaction with real-time dashboards and smart scheduling.",
@@ -154,9 +157,9 @@ const experiences = [
   {
     title: "Bachelor´s Final Year Internship – Marketing Operations Management Platform",
     company_name: "Faculté Des Sciences et Techniques Tanger",
-    iconBg: "#E6DEDD",
+    iconBg: "#FDFEFE",
     date: "Apr 2024 - Jun 2024",
-    icon: fstlogo,
+    icon: smartLogo,
     points: [
       "Developed a full-stack marketing operations platform using the MEAN Stack, automating over 60% of marketing tasks.",
       "Enhanced campaign management efficiency by 40–50% through integrated real-time analytics and process automation.",
@@ -167,7 +170,7 @@ const educations = [
   {
     title: "Master in Artificial Intelligence and Data Science",
     institution: "Faculté Des Sciences et Techniques Tanger",
-    iconBg: "#E6DEDD",
+    iconBg: "#FDFEFE",
     icon: LOGOMASTER,
     date: "2024 - 2026",
     points: [
@@ -179,7 +182,7 @@ const educations = [
   {
     title: "Licence in Application Development Engineering",
     institution: "Faculté Des Sciences et Techniques Tanger",
-    iconBg: "#E6DEDD",
+    iconBg: "#FDFEFE",
     date: "2022 - 2023",
     icon: fstlogo,
     points: [
@@ -191,7 +194,7 @@ const educations = [
   {
     title: "DEUST in Mathematics, Computer Science, Physics, and Chemistry (MIPC)",
     institution: "Faculté Des Sciences et Techniques Tanger",
-    iconBg: "#E6DEDD",
+    iconBg: "#FDFEFE",
     date: "2019 - 2022",
     icon: fstlogo,
     points: [
