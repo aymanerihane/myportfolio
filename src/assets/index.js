@@ -9,6 +9,8 @@ import eye from "./eye.png";
 
 import LOGOMASTER from "./LOGOMASTER.jpg";
 import fstlogo from "./fstlogo.jpg";
+import nttLogo from "./Ntt.png"
+import digiup from "./digiup.jpg"
 
 import MyStudyMate from "./MyStudyMate.png";
 import ParkinsonsDisease from "./ParkinsonsDisease.png";
@@ -58,4 +60,6 @@ export {
   dl,
   fer,
   CSS,
+  nttLogo,
+  digiup
 };
