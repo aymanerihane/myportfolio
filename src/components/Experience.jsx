@@ -112,17 +112,9 @@ const Experience = () => {
         </h2>
       </motion.div>
 
-      <div className='mt-20 flex flex-col'>
-        <VerticalTimeline>
-          {educations.map((education, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              education={education}
-            />
-          ))}
-        </VerticalTimeline>
 
         <div className='mt-20 flex flex-col'>
+          
         <VerticalTimeline>
           {educations.map((education, index) => (
             <EducationCard
@@ -132,6 +124,26 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
+
+
+      <motion.div variants={textVariant()}>
+        <p className={`${styles.sectionSubText} text-center`}>
+          What I have learned so far
+        </p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>
+          Experience.
+        </h2>
+      </motion.div>
+      
+      <div className='mt-20 flex flex-col'>
+        <VerticalTimeline>
+          {educations.map((education, index) => (
+            <ExperienceCard
+              key={`experience-${index}`}
+              education={education}
+            />
+          ))}
+        </VerticalTimeline>
       </div>
     </>
   );
