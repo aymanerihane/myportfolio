@@ -13,6 +13,11 @@ import nttLogo from "./Ntt.png"
 import digiup from "./digiup.jpg"
 import smartLogo from "./smart.jpg"
 
+import chat from "./chat.png"
+import teach from "./teach.png"
+import sehatoka from "./sehatoka.png"
+
+
 import MyStudyMate from "./MyStudyMate.png";
 import ParkinsonsDisease from "./ParkinsonsDisease.png";
 import PNP from "./PNP.png";
@@ -63,5 +68,8 @@ export {
   CSS,
   nttLogo,
   digiup,
-  smartLogo
+  smartLogo,
+  chat,
+  teach,
+  sehatoka
 };

@@ -49,7 +49,7 @@ const About = () => {
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        I am a passionate and driven Master's student in Artificial Intelligence and Data Science, with a strong background in software development, data analysis, and machine learning. My expertise includes designing and implementing scalable applications, developing dynamic web platforms, and building data-driven solutions. I have hands-on experience with full-stack development, database management, and data processing pipelines, with a focus on optimizing performance and delivering robust solutions.
+        I am an AI and Data Science Engineer with a Master's background in Artificial Intelligence and Data Science and a strong foundation in software engineering. I specialize in building intelligent applications using Generative AI, RAG, NLP, and Machine Learning, combined with production-ready backend development using Python and FastAPI. I have hands-on experience developing enterprise AI assistants, healthcare platforms, real-time data pipelines, and scalable software systems. I enjoy turning complex problems into practical, reliable, and data-driven solutions.
       </motion.p>
       </div>
       <motion.div variants={textVariantReverse("", "", 0.1, 1)}>

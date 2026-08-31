@@ -20,7 +20,10 @@ import {
   amazon_sentiment,
   nttLogo,
   digiup,
-  smartLogo
+  smartLogo,
+  chat,
+  teach,
+  sehatoka
 } from "../assets";
 import {
   DiJavascript1,
@@ -59,36 +62,35 @@ import {
 import { FaEye } from "react-icons/fa";
 
 const technologies = [
+  // AI & Machine Learning
   { name: "Python", icon: DiPython },
-  { name: "FastAPI", icon: SiFastapi },
-  { name: "React", icon: DiReact },
-  { name: "Scikit-learn", icon: SiScikitlearn },
+  { name: "PyTorch", icon: SiPytorch },
   { name: "TensorFlow", icon: SiTensorflow },
-  { name: "Keras", icon: SiKeras },
+  { name: "Scikit-learn", icon: SiScikitlearn },
+  { name: "Transformers", icon: SiHuggingface },
   { name: "OpenCV", icon: SiOpencv },
-  { name: "Mediapipe", icon: SiMediapipe },
+
+  // Generative AI & Backend
+  { name: "FastAPI", icon: SiFastapi },
+  { name: "LangChain", icon: SiLangchain },
+  { name: "PostgreSQL", icon: SiPostgresql },
+  { name: "MongoDB", icon: DiMongodb },
+  { name: "Redis", icon: SiRedis },
+  { name: "Docker", icon: SiDocker },
+
+  // Data Engineering
+  { name: "Apache Kafka", icon: SiApachekafka },
+  { name: "Apache Spark", icon: SiApachespark },
   { name: "Pandas", icon: SiPandas },
   { name: "NumPy", icon: SiNumpy },
-  { name: "Apache kafka", icon: SiApachekafka },
-  { name: "Apache Spark", icon: SiApachespark },
-  { name: "Apache Hadoop", icon: SiApachehadoop },
-  { name: "Talend", icon: SiTalend },
-  { name: "C++", icon: SiCplusplus },
-  { name: "Java", icon: DiJava },
-  { name: "Dart", icon: DiDart },
-  { name: "Streamlit", icon: SiStreamlit },
-  { name: "HTML", icon: DiHtml5 },
-  { name: "CSS", icon: DiCss3 },
-  { name: "JavaScript", icon: DiJavascript1 },
-  { name: "Spring Boot", icon: SiSpringboot },
-  { name: "Git", icon: DiGit },
-  { name: "Gitlab ", icon: SiGitlab },
-  { name: "Docker", icon: SiDocker },
-  { name: "T-SQL", icon: SiPostgresql },
-  { name: "SQLite", icon: SiSqlite },
-  { name: "MySQL", icon: DiMysql },
-  { name: "MongoDB", icon: DiMongodb },
 
+  // Development
+  { name: "React", icon: DiReact },
+  { name: "TypeScript", icon: SiTypescript },
+  { name: "Java", icon: DiJava },
+  { name: "C++", icon: SiCplusplus },
+  { name: "Git", icon: DiGit },
+  { name: "Linux", icon: SiLinux },
 ];
 export const navLinks = [
   {
@@ -96,7 +98,11 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
+    id: "experience",
+    title: "Experience",
+  },
+  {
+    id: "education",
     title: "Education",
   },
   {
@@ -111,20 +117,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "AI Ingenier",
+    title: "AI Engineer",
     icon: creator,
   },
   {
-    title: "Data Scientist",
-    icon: mobile,
-  },
-  {
-    title: "Web Developer",
-    icon: web,
+    title: "Generative AI Engineer",
+    icon: backend,
   },
   {
     title: "Machine Learning Engineer",
-    icon: backend,
+    icon: mobile,
+  },
+  {
+    title: "Backend Engineer",
+    icon: web,
   },
 ];
 
@@ -136,183 +142,277 @@ const experiences = [
     icon: nttLogo,
     date: "Feb 2026 - Jul 2026",
     points: [
-      "Developed a RAG-based Enterprise Knowledge Assistant for Microsoft Teams using SharePoint.",
-      "Implemented hybrid retrieval (vector search + BM25), intent routing, and conversational memory to improve answer quality.",
-      "Enforced Microsoft Entra ID role-based access control and citation validation for secure, traceable responses.",
-      "Automated SharePoint document ingestion and synchronization for real-time knowledge updates.",
+      "Developed an enterprise knowledge assistant for Microsoft Teams using Retrieval-Augmented Generation (RAG) and SharePoint.",
+      "Implemented hybrid information retrieval combining dense vector search and BM25 with intent routing and conversational context.",
+      "Integrated secure document access using Microsoft Entra ID and role-based authorization to ensure users only retrieve permitted content.",
+      "Built automated document ingestion and synchronization pipelines for enterprise files and structured data.",
+      "Implemented citation validation and source-grounded responses to improve answer traceability and reliability.",
+      "Developed the backend using FastAPI with PostgreSQL, Redis, Qdrant and Docker-based services.",
     ],
   },
+
   {
-    title: "Application Internship - Al-Enhanced Healthcare Platform",
+    title: "AI Developer Intern – Healthcare Platform",
     company_name: "DIGIUP",
     iconBg: "#FDFEFE",
-    date: "Jul 2025 - Aug 2025",
     icon: digiup,
+    date: "Jul 2025 - Aug 2025",
     points: [
-      "Smart healthcare management platform that digitizes hospital workflows and centralizes patient records.",
-      "Enables seamless patient-doctor-staff interaction with real-time dashboards and smart scheduling.",
-      "Built real-time dashboards and smart scheduling, increasing staff–patient interaction efficiency by 30–40% within hospital departments.",
+      "Developed an AI-enhanced healthcare management platform designed to digitize hospital workflows and centralize patient records.",
+      "Built real-time dashboards and smart scheduling features to improve coordination between patients, doctors and staff.",
+      "Implemented AI-powered information retrieval and NLP components using Transformers, BERT, LangChain and RAG.",
+      "Developed asynchronous backend workflows using FastAPI, Redis and Celery.",
+      "Improved staff–patient interaction efficiency by 30–40% within participating hospital departments.",
     ],
   },
+
   {
-    title: "Bachelor´s Final Year Internship – Marketing Operations Management Platform",
-    company_name: "Faculté Des Sciences et Techniques Tanger",
+    title: "Bachelor's Final Year Intern – Marketing Operations Platform",
+    company_name: "Faculté des Sciences et Techniques de Tanger",
     iconBg: "#FDFEFE",
     date: "Apr 2024 - Jun 2024",
     icon: smartLogo,
     points: [
-      "Developed a full-stack marketing operations platform using the MEAN Stack, automating over 60% of marketing tasks.",
-      "Enhanced campaign management efficiency by 40–50% through integrated real-time analytics and process automation.",
+      "Developed a full-stack marketing operations management platform using the MEAN stack.",
+      "Automated more than 60% of repetitive marketing operations and workflows.",
+      "Implemented real-time analytics to support campaign monitoring and decision-making.",
+      "Improved campaign management efficiency by approximately 40–50% through workflow automation.",
     ],
   },
 ];
 const educations = [
   {
-    title: "Master in Artificial Intelligence and Data Science",
-    institution: "Faculté Des Sciences et Techniques Tanger",
+    title: "Master's Degree in Artificial Intelligence and Data Science",
+    institution: "Faculté des Sciences et Techniques de Tanger",
     iconBg: "#FDFEFE",
     icon: LOGOMASTER,
     date: "2024 - 2026",
     points: [
-      "Studying advanced AI techniques, including machine learning, deep learning, and data analytics.",
-      "Working on real-world AI applications and research projects.",
-      "Developing expertise in big data processing and cloud computing.",
+      "Specialized in machine learning, deep learning, NLP, generative AI and data science.",
+      "Developed AI systems involving RAG, information retrieval, LLM applications and predictive modeling.",
+      "Worked on data engineering, big data processing and scalable AI architectures.",
     ],
   },
   {
-    title: "Licence in Application Development Engineering",
-    institution: "Faculté Des Sciences et Techniques Tanger",
+    title: "Bachelor's Degree in Application Development Engineering",
+    institution: "Faculté des Sciences et Techniques de Tanger",
     iconBg: "#FDFEFE",
-    date: "2022 - 2023",
     icon: fstlogo,
+    date: "2022 - 2023",
     points: [
-      "Focused on software engineering, full-stack development, and system architecture.",
-      "Worked on multiple projects using modern programming languages and frameworks.",
-      "Gained experience in database management and cybersecurity.",
+      "Focused on software engineering, backend development, database systems and application architecture.",
+      "Developed full-stack web and mobile applications using modern development frameworks.",
     ],
   },
   {
-    title: "DEUST in Mathematics, Computer Science, Physics, and Chemistry (MIPC)",
-    institution: "Faculté Des Sciences et Techniques Tanger",
+    title: "DEUST in Mathematics, Computer Science, Physics and Chemistry",
+    institution: "Faculté des Sciences et Techniques de Tanger",
     iconBg: "#FDFEFE",
     date: "2019 - 2022",
-    icon: fstlogo,
     points: [
-      "Built a strong foundation in mathematics, programming, and scientific computing.",
-      "Developed problem-solving skills and logical reasoning in computational sciences.",
-      "Worked on programming assignments using Python, Java, and C++.",
+      "Built a strong foundation in mathematics, computer science and scientific computing.",
+      "Developed programming and problem-solving skills using Python, Java and C++.",
     ],
   },
 ];
 
 const projects = [
-
-  {
-    name: "Real-Time Face Expression Recognition",
-    // view : "https://real-time-face-expression-recognition.streamlit.app",
+{
+    name: "Enterprise Knowledge Assistant for Microsoft Teams",
     view: "NaN",
     description:
-      "This facial expression recognition system leverages deep learning to detect and classify emotions from static images, video files, or real-time webcam input. It features pre-trained models such as VGG16, VGG19, and EfficientNet B7, offering a trade-off between speed and accuracy. Built with TensorFlow, OpenCV, and Streamlit, the system can recognize common expressions like happy, sad, angry, surprised, and neutral.",
+      "An enterprise AI assistant built with Retrieval-Augmented Generation (RAG) to provide secure, source-grounded answers over organizational documents stored in SharePoint. The system combines hybrid retrieval, intent routing, reranking, identity-aware document access, and automated document ingestion.",
     tags: [
       {
-        name: "Deep Learning",
+        name: "RAG",
         color: "text-blue-500",
       },
       {
-        name: "Facial Expression Recognition",
+        name: "LLMs",
         color: "text-green-500",
       },
       {
-        name: "Real-Time",
-        color: "text-red-500",
-      },
-      {
-        name: "FER",
-        color: "text-pink-500",
-      },
-    ],
-    image: fer,
-    source_code_link: "https://github.com/aymanerihane/Real-Time-Face-Expression-Recognition",
-  },
-  {
-  name: "Cloud Infrastructure & OpenStack Deployment",
-  view: "NaN",
-  description:
-    "This academic cloud computing project is divided into four major parts: designing a full CloudSim-based architecture for Abdelmalek Essaadi University, deploying and configuring an OpenStack cloud environment (including IaaS and SaaS implementations), automating VM provisioning using Terraform, and creating a complete Service Level Agreement (SLA) with a Python monitoring script to track OpenStack instance availability every 5 minutes. The project simulates real-world cloud infrastructure planning, deployment, automation, and monitoring.",
-  tags: [
-    {
-      name: "Cloud Computing",
-      color: "text-blue-500",
-    },
-    {
-      name: "OpenStack",
-      color: "text-red-500",
-    },
-    {
-      name: "Terraform",
-      color: "text-green-500",
-    },
-    {
-      name: "SLA Monitoring",
-      color: "text-purple-500",
-    },
-  ],
-  image: cloud, // mets ton image ici
-  source_code_link: "NaN", // mets le repo quand fini
-  },
-
-  {
-    name: "Real-Time Amazon Sentiment Analysis Pipeline",
-    view: "NaN",
-    description:
-      "Developed a scalable real-time data pipeline that scrapes Amazon Music New Releases album reviews and performs sentiment analysis using Apache Spark MLlib. The system leverages Kafka for message streaming, MongoDB for data storage, and provides live sentiment insights through a React dashboard with WebSocket connections. Built with containerized microservices architecture using Docker Compose, the pipeline processes album reviews in real-time and delivers both live analytics and historical data export capabilities.",
-    tags: [
-      {
-        name: "Apache Spark",
-        color: "text-blue-500",
-      },
-      {
-        name: "Kafka",
-        color: "text-green-500",
-      },
-      {
-        name: "MongoDB",
+        name: "Qdrant",
         color: "text-pink-500",
       },
       {
-        name: "Docker",
+        name: "FastAPI",
         color: "text-yellow-500",
       },
       {
-        name: "React",
+        name: "Microsoft Graph",
         color: "text-purple-500",
       },
     ],
-    image: amazon_sentiment, // You'll need to add this image
-    source_code_link: "https://github.com/aymanerihane/Real-Time-Amazon-Sentiment-Analysis-Pipeline",
+    image: chat,
+    source_code_link: "NaN",
   },
+
   {
-    name: "Charged System Search Adapted Using GA for TSP ",
+    name: "Sehatoka – AI Healthcare Information Platform",
     view: "NaN",
     description:
-      "This work presents an adaptation of the Charged System Search (CSS) algorithm with Genetic Algorithm to solve the well-known Travelling Salesman Problem (TSP). CSS, inspired by electrostatics and Newtonian mechanics, is a population-based meta- heuristic where each solution is considered as a charged particle. To handle the combi- natorial nature of TSP, we integrate CSS principles with Genetic Algorithm operators such as ordered crossover and mutation.",
+      "An AI-powered healthcare platform designed to digitize hospital workflows and provide intelligent access to medical information. The system combines RAG, NLP, BERT-based models, and real-time backend services to support healthcare workflows, information retrieval, and interaction between healthcare users.",
     tags: [
       {
-        name: "Charged System Search (CSS)",
+        name: "RAG",
         color: "text-blue-500",
       },
       {
-        name: "CBR",
+        name: "BERT",
         color: "text-green-500",
       },
       {
-        name: "Genetic Algorithms",
+        name: "LangChain",
         color: "text-pink-500",
       },
+      {
+        name: "FastAPI",
+        color: "text-yellow-500",
+      },
+      {
+        name: "Redis",
+        color: "text-red-500",
+      },
     ],
-    image: CSS,
-    source_code_link: "https://github.com/aymanerihane/TSP-ChargedSystemSearch-GA",
+    image: sehatoka,
+    source_code_link: "NaN",
   },
+
+  {
+    name: "Teach – Multilingual Learning Platform",
+    view: "NaN",
+    description:
+      "A full-stack multilingual learning platform designed for students, teachers, and administrators. The platform supports English, French, and Arabic interfaces and provides course management, exercises, exams, private resources, subscriptions, enrollment workflows, and progress tracking.",
+    tags: [
+      {
+        name: "React",
+        color: "text-blue-500",
+      },
+      {
+        name: "TypeScript",
+        color: "text-green-500",
+      },
+      {
+        name: "FastAPI",
+        color: "text-pink-500",
+      },
+      {
+        name: "PostgreSQL",
+        color: "text-yellow-500",
+      },
+      {
+        name: "Docker",
+        color: "text-purple-500",
+      },
+    ],
+    image: teach,
+    source_code_link: "NaN",
+  },
+  {
+  name: "Real-Time Facial Expression Recognition",
+  view: "NaN",
+  description:
+    "A real-time facial expression recognition system using transfer learning and computer vision to classify facial expressions from images, videos and webcam streams. The project evaluates VGG16, VGG19 and EfficientNet architectures and provides real-time inference through OpenCV and Streamlit.",
+  tags: [
+    {
+      name: "Deep Learning",
+      color: "text-blue-500",
+    },
+    {
+      name: "Computer Vision",
+      color: "text-green-500",
+    },
+    {
+      name: "TensorFlow",
+      color: "text-red-500",
+    },
+    {
+      name: "OpenCV",
+      color: "text-pink-500",
+    },
+  ],
+  image: fer,
+  source_code_link:
+    "https://github.com/aymanerihane/Real-Time-Face-Expression-Recognition",
+},
+  // {
+  // name: "Cloud Infrastructure & OpenStack Deployment",
+  // view: "NaN",
+  // description:
+  //   "This academic cloud computing project is divided into four major parts: designing a full CloudSim-based architecture for Abdelmalek Essaadi University, deploying and configuring an OpenStack cloud environment (including IaaS and SaaS implementations), automating VM provisioning using Terraform, and creating a complete Service Level Agreement (SLA) with a Python monitoring script to track OpenStack instance availability every 5 minutes. The project simulates real-world cloud infrastructure planning, deployment, automation, and monitoring.",
+  // tags: [
+  //   {
+  //     name: "Cloud Computing",
+  //     color: "text-blue-500",
+  //   },
+  //   {
+  //     name: "OpenStack",
+  //     color: "text-red-500",
+  //   },
+  //   {
+  //     name: "Terraform",
+  //     color: "text-green-500",
+  //   },
+  //   {
+  //     name: "SLA Monitoring",
+  //     color: "text-purple-500",
+  //   },
+  // ],
+  // image: cloud, // mets ton image ici
+  // source_code_link: "NaN", // mets le repo quand fini
+  // },
+
+  {
+  name: "Real-Time Amazon Sentiment Analysis Pipeline",
+  view: "NaN",
+  description:
+    "A real-time data engineering and sentiment analysis pipeline that streams Amazon Music reviews through Kafka, processes them with Apache Spark MLlib, stores results in MongoDB and visualizes live insights through a React dashboard.",
+  tags: [
+    {
+      name: "Apache Kafka",
+      color: "text-blue-500",
+    },
+    {
+      name: "Apache Spark",
+      color: "text-green-500",
+    },
+    {
+      name: "Machine Learning",
+      color: "text-red-500",
+    },
+    {
+      name: "Docker",
+      color: "text-purple-500",
+    },
+  ],
+  image: amazon_sentiment,
+  source_code_link:
+    "https://github.com/aymanerihane/Real-Time-Amazon-Sentiment-Analysis-Pipeline",
+},
+  {
+  name: "Hybrid Charged System Search & Genetic Algorithm for TSP",
+  view: "NaN",
+  description:
+    "A hybrid metaheuristic optimization approach combining Charged System Search with Genetic Algorithm operators to solve the Travelling Salesman Problem. The implementation uses population-based optimization, ordered crossover and mutation for combinatorial search.",
+  tags: [
+    {
+      name: "Optimization",
+      color: "text-blue-500",
+    },
+    {
+      name: "Genetic Algorithms",
+      color: "text-green-500",
+    },
+    {
+      name: "Metaheuristics",
+      color: "text-pink-500",
+    },
+  ],
+  image: CSS,
+  source_code_link:
+    "https://github.com/aymanerihane/TSP-ChargedSystemSearch-GA",
+},
   {
     name: "Fuzzy CBR Approch of Value Engineering ",
     view: "NaN",
@@ -337,130 +437,131 @@ const projects = [
     source_code_link: "https://github.com/aymanerihane/Fuzzy_CBR_Approch_of_Value_Engineering",
   },
   {
-    name: "Parkinson’s Disease Prediction with Machine Learning From scratch",
-    view: "NaN",
-    description:
-      "This project uses vocal features and an Ensemble Feature Selection Algorithm (EFSA) to enhance Parkinson’s disease classification. Optimized models (Logistic Regression, Random Forest, LightGBM) are combined in a majority-vote ensemble, improving accuracy and robustness for early diagnosis, particularly in telemedicine.",
-    tags: [
-      {
-        name: "Logistic Regression",
-        color: "text-blue-500",
-      },
-      {
-        name: "Random Forest",
-        color: "text-green-500",
-      },
-      {
-        name: "LightGBM",
-        color: "text-pink-500",
-      },
-      {
-        name: "vocal features",
-        color: "text-yellow-500",
-      },
-    ],
-    image: ParkinsonsDisease,
-    source_code_link: "https://github.com/aymanerihane/Parkinson-s-disease-ML",
-  },
-  {
-    name: "Briscola Moroccan card game",
-    view: "NaN",
-    description:
-      "Design and development of a Moroccan card game in C++ using the Qt Framework. The game includes a GUI, an bot player. The project involved implementing the game logic, designing the GUI, and developing an bot player with 3 different deficulty.",
-    tags: [
-      {
-        name: "C++",
-        color: "text-blue-500",
-      },
-      {
-        name: "Qt/QML Framework",
-        color: "text-green-500",
-      },
-      {
-        name: "Desktop App",
-        color: "text-pink-500",
-      },
-    ],
-    image: briscola,
-    source_code_link: "https://github.com/aymanerihane/Card_Game_Briscola",
-  },
-  {
-    name: "PNP : Professional Networking Platform",
-    view: "NaN",
-    description:
-      "A professional networking platform for students, teachers, and businesses. Built with Django/Python for backend and HTML5/CSS for frontend. Facilitates profile creation, class management, project showcasing, and business connections. ",
-    tags: [
-      {
-        name: "Django",
-        color: "text-blue-500",
-      },
-      {
-        name: "Python",
-        color: "text-green-500",
-      },
-      {
-        name: "GSAP",
-        color: "text-pink-500",
-      },
-    ],
-    image: PNP,
-    source_code_link: "https://github.com/aymanerihane/Professional-Networking-Platform",
-  },
-  {
-    name: "UniEvents",
-    view: "NaN",
-    description:
-      "UniEvents is a Flutter application for tracking university events. It utilizes SQLite to store and manage data locally. Follow, schedule, and participate in university events, all from your mobile device. ",
-    tags: [
-      {
-        name: "Flutter",
-        color: "text-blue-500",
-      },
-      {
-        name: "Mobile App",
-        color: "text-green-500",
-      },
+  name: "Parkinson's Disease Prediction with Machine Learning",
+  view: "NaN",
+  description:
+    "A machine learning classification system using vocal features to predict Parkinson's disease. The project combines feature selection with Logistic Regression, Random Forest and LightGBM models using ensemble voting to improve classification performance.",
+  tags: [
+    {
+      name: "Machine Learning",
+      color: "text-blue-500",
+    },
+    {
+      name: "Feature Selection",
+      color: "text-green-500",
+    },
+    {
+      name: "Random Forest",
+      color: "text-pink-500",
+    },
+    {
+      name: "LightGBM",
+      color: "text-yellow-500",
+    },
+  ],
+  image: ParkinsonsDisease,
+  source_code_link:
+    "https://github.com/aymanerihane/Parkinson-s-disease-ML",
+},
+  // {
+  //   name: "Briscola Moroccan card game",
+  //   view: "NaN",
+  //   description:
+  //     "Design and development of a Moroccan card game in C++ using the Qt Framework. The game includes a GUI, an bot player. The project involved implementing the game logic, designing the GUI, and developing an bot player with 3 different deficulty.",
+  //   tags: [
+  //     {
+  //       name: "C++",
+  //       color: "text-blue-500",
+  //     },
+  //     {
+  //       name: "Qt/QML Framework",
+  //       color: "text-green-500",
+  //     },
+  //     {
+  //       name: "Desktop App",
+  //       color: "text-pink-500",
+  //     },
+  //   ],
+  //   image: briscola,
+  //   source_code_link: "https://github.com/aymanerihane/Card_Game_Briscola",
+  // },
+  // {
+  //   name: "PNP : Professional Networking Platform",
+  //   view: "NaN",
+  //   description:
+  //     "A professional networking platform for students, teachers, and businesses. Built with Django/Python for backend and HTML5/CSS for frontend. Facilitates profile creation, class management, project showcasing, and business connections. ",
+  //   tags: [
+  //     {
+  //       name: "Django",
+  //       color: "text-blue-500",
+  //     },
+  //     {
+  //       name: "Python",
+  //       color: "text-green-500",
+  //     },
+  //     {
+  //       name: "GSAP",
+  //       color: "text-pink-500",
+  //     },
+  //   ],
+  //   image: PNP,
+  //   source_code_link: "https://github.com/aymanerihane/Professional-Networking-Platform",
+  // },
+  // {
+  //   name: "UniEvents",
+  //   view: "NaN",
+  //   description:
+  //     "UniEvents is a Flutter application for tracking university events. It utilizes SQLite to store and manage data locally. Follow, schedule, and participate in university events, all from your mobile device. ",
+  //   tags: [
+  //     {
+  //       name: "Flutter",
+  //       color: "text-blue-500",
+  //     },
+  //     {
+  //       name: "Mobile App",
+  //       color: "text-green-500",
+  //     },
 
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/aymanerihane/UniEvents",
-  },
-  {
-    name: "MyStudyMate",
-    view: "NaN",
-    description:
-      "Dynamic web app for students and educators, employing PHP, MySQL, and Laravel. Key features include a robust communication hub, easy service access, timetable management, and event tracking. Importantly, we've opted for a customized front-end, avoiding frameworks like Bootstrap. ",
-    tags: [
-      {
-        name: "Laravel",
-        color: "text-blue-500",
-      },
-      {
-        name: "Native CSS & JS",
-        color: "text-green-500",
-      },
-    ],
-    image: MyStudyMate,
-    source_code_link: "https://github.com/aymanerihane/web-app-for-students-and-educators",
-  },
-  {
-    name: "Image Compression using SVD",
-    view: "NaN",
-    description:
-      "implementation of image compression using Singular Value Decomposition (SVD). The goal is to reduce the image size while retaining significant visual details by reconstructing it with a reduced number of singular values. ",
-    tags: [
-      {
-        name: "Image Compression",
-        color: "text-blue-500",
-      },
-      {
-        name: "SVD",
-        color: "text-green-500",
-      },
-    ],
-    image: svd,
-    source_code_link: "https://github.com/aymanerihane/Image-Compression-using-SVD",
-  },
+  //   ],
+  //   image: tripguide,
+  //   source_code_link: "https://github.com/aymanerihane/UniEvents",
+  // },
+  // {
+  //   name: "MyStudyMate",
+  //   view: "NaN",
+  //   description:
+  //     "Dynamic web app for students and educators, employing PHP, MySQL, and Laravel. Key features include a robust communication hub, easy service access, timetable management, and event tracking. Importantly, we've opted for a customized front-end, avoiding frameworks like Bootstrap. ",
+  //   tags: [
+  //     {
+  //       name: "Laravel",
+  //       color: "text-blue-500",
+  //     },
+  //     {
+  //       name: "Native CSS & JS",
+  //       color: "text-green-500",
+  //     },
+  //   ],
+  //   image: MyStudyMate,
+  //   source_code_link: "https://github.com/aymanerihane/web-app-for-students-and-educators",
+  // },
+  // {
+  //   name: "Image Compression using SVD",
+  //   view: "NaN",
+  //   description:
+  //     "implementation of image compression using Singular Value Decomposition (SVD). The goal is to reduce the image size while retaining significant visual details by reconstructing it with a reduced number of singular values. ",
+  //   tags: [
+  //     {
+  //       name: "Image Compression",
+  //       color: "text-blue-500",
+  //     },
+  //     {
+  //       name: "SVD",
+  //       color: "text-green-500",
+  //     },
+  //   ],
+  //   image: svd,
+  //   source_code_link: "https://github.com/aymanerihane/Image-Compression-using-SVD",
+  // },
   // {
   //   name: "Interactive-Machine-Learning-Toolkit",
   //   description:
@@ -483,46 +584,50 @@ const projects = [
   //   source_code_link: "Machine-Learning-From-Scratch ",
   // },
   {
-    name: "Machine Learning From Scratch ",
-    view: "NaN",
-    description:
-      "An interactive machine learning toolkit built with CustomTkinter, featuring a user-friendly GUI for data processing, visualization, and model building. The application includes functionalities like customizable widgets, dynamic target selection, data upload options, and result exporting with visually appealing designs. ",
-    tags: [
-      {
-        name: "Machine Learning",
-        color: "text-blue-500",
-      },
-      {
-        name: "From Scratch",
-        color: "text-green-500",
-      },
-
-    ],
-    image: ml,
-    source_code_link: "https://github.com/aymanerihane/Machine-Learning-From-Scratch",
-  },
-  {
-    name: "Deep learning projects",
-    view: "NaN",
-    description:
-      "A collection of deep learning projects built with TensorFlow and Keras, focused on tasks like classification and prediction. Each project includes data preprocessing, model training, evaluation, and visualizations. Designed for learning, experimentation, and showcasing practical skills in deep learning. ",
-    tags: [
-      {
-        name: "Deep Learning",
-        color: "text-blue-500",
-      },
-      {
-        name: "CNN",
-        color: "text-green-500",
-      },
-      {
-        name: "ANN",
-        color: "text-pink-500",
-      },
-    ],
-    image: dl,
-    source_code_link: "https://github.com/aymanerihane/Deep_learning_projects",
-  },
+  name: "Machine Learning Toolkit",
+  view: "NaN",
+  description:
+    "An interactive Python toolkit for exploring machine learning workflows, including dataset preprocessing, feature selection, model training, evaluation and result visualization through a desktop interface.",
+  tags: [
+    {
+      name: "Python",
+      color: "text-blue-500",
+    },
+    {
+      name: "Machine Learning",
+      color: "text-green-500",
+    },
+    {
+      name: "CustomTkinter",
+      color: "text-pink-500",
+    },
+  ],
+  image: ml,
+  source_code_link:
+    "https://github.com/aymanerihane/Machine-Learning-From-Scratch",
+},
+  // {
+  //   name: "Deep learning projects",
+  //   view: "NaN",
+  //   description:
+  //     "A collection of deep learning projects built with TensorFlow and Keras, focused on tasks like classification and prediction. Each project includes data preprocessing, model training, evaluation, and visualizations. Designed for learning, experimentation, and showcasing practical skills in deep learning. ",
+  //   tags: [
+  //     {
+  //       name: "Deep Learning",
+  //       color: "text-blue-500",
+  //     },
+  //     {
+  //       name: "CNN",
+  //       color: "text-green-500",
+  //     },
+  //     {
+  //       name: "ANN",
+  //       color: "text-pink-500",
+  //     },
+  //   ],
+  //   image: dl,
+  //   source_code_link: "https://github.com/aymanerihane/Deep_learning_projects",
+  // },
 
 ];
 
