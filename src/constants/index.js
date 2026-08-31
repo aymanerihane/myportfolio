@@ -57,7 +57,13 @@ import {
   SiTalend,
   SiMediapipe,
   SiApachekafka,
-  SiGitlab
+  SiGitlab,
+  SiPytorch,
+  SiHuggingface,
+  SiLangchain,
+  SiRedis,
+  SiTypescript,
+  SiLinux
 } from "react-icons/si";
 import { FaEye } from "react-icons/fa";
 
