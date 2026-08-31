@@ -281,7 +281,7 @@ const projects = [
 
   {
     name: "Teach – Multilingual Learning Platform",
-    view: "NaN",
+    view: "https://teach.rihaneaymanee.workers.dev/en",
     description:
       "A full-stack multilingual learning platform designed for students, teachers, and administrators. The platform supports English, French, and Arabic interfaces and provides course management, exercises, exams, private resources, subscriptions, enrollment workflows, and progress tracking.",
     tags: [
