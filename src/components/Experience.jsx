@@ -72,6 +72,7 @@ const Experience = () => {
       <motion.div
         variants={textVariant()}
         className="mt-20"
+        id="experience"
       >
         <p className={`${styles.sectionSubText} text-center`}>
           My professional experience
@@ -96,7 +97,7 @@ const Experience = () => {
 
       
       {/* Education */}
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} id="education">
         <p className={`${styles.sectionSubText} text-center`}>
           My academic background
         </p>
