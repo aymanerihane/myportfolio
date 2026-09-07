@@ -214,6 +214,7 @@ const educations = [
     title: "DEUST in Mathematics, Computer Science, Physics and Chemistry",
     institution: "Faculté des Sciences et Techniques de Tanger",
     iconBg: "#FDFEFE",
+    icon: fstlogo,
     date: "2019 - 2022",
     points: [
       "Built a strong foundation in mathematics, computer science and scientific computing.",
